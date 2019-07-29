@@ -1,0 +1,4 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.gexiao.demo.context.AfterHelloWorldApplicationContextInitializer,\
+com.gexiao.demo.context.HelloWorldApplicationContextInitializer

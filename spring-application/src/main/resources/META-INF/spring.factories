@@ -2,3 +2,13 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.gexiao.demo.context.AfterHelloWorldApplicationContextInitializer,\
 com.gexiao.demo.context.HelloWorldApplicationContextInitializer
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.gexiao.demo.listener.AfterHelloWorldApplicationListener,\
+com.gexiao.demo.listener.HelloWorldApplicationListener,\
+com.gexiao.demo.listener.BeforeConfigFileApplicationListener
+
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.gexiao.demo.run.HelloWorldRunListener

@@ -17,6 +17,7 @@
     <modules>
         <module>autoconfigure</module>
         <module>spring-application</module>
+        <module>spring-webmvc</module>
     </modules>
 
     <properties>

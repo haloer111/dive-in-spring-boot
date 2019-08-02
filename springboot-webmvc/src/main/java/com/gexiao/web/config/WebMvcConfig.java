@@ -1,14 +1,9 @@
-package com.gexiao.config;
+package com.gexiao.web.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.springframework.web.servlet.view.JstlView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
  * @Description:
  */
 @Configuration
-@EnableWebMvc
-public class WebMvcConfig   implements WebMvcConfigurer {
+//@EnableWebMvc
+public class WebMvcConfig implements WebMvcConfigurer {
 
 //        <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>-->
 //    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
@@ -30,16 +25,16 @@ public class WebMvcConfig   implements WebMvcConfigurer {
 //        <!--<property name="suffix" value=".jsp"/>-->
 //    <!--</bean>-->
 
-    @Bean
-    public ViewResolver htmlViewResolver(){
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-
-        viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF/jsp/");
-        viewResolver.setSuffix(".jsp");
-
-        return viewResolver;
-    }
+//    @Bean
+//    public ViewResolver htmlViewResolver() {
+//        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+//
+//        viewResolver.setViewClass(JstlView.class);
+//        viewResolver.setPrefix("/WEB-INF/jsp/");
+//        viewResolver.setSuffix(".jsp");
+//
+//        return viewResolver;
+//    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

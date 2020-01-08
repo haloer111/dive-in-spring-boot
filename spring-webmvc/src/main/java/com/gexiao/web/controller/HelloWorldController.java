@@ -15,10 +15,11 @@ public class HelloWorldController {
 
     @RequestMapping("")
     public String index(@RequestParam int value, Model model) {
+//        使用对应的 {@link HelloWorldControllerAdvice} 来处理
 //        model.addAttribute("message", "Hello,World");
 //        model.addAttribute("acceptLanguage", acceptLanguage);
 //        model.addAttribute("jsessionId", jsessionId);
-        model.addAttribute("value", value);
+//        model.addAttribute("value", value);
         return "index";
     }
 

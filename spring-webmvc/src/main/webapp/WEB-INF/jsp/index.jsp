@@ -15,5 +15,6 @@
     ${message}
     jsessionId: ${jsessionId}
     acceptLanguage:  ${acceptLanguage}
+    value: ${value}
 </body>
 </html>

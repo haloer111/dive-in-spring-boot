@@ -20,6 +20,11 @@ public class BeforeConfigFileApplicationListener implements SmartApplicationList
                 || ApplicationPreparedEvent.class.isAssignableFrom(eventType);
     }
 
+    @Override
+    public boolean supportsSourceType(Class<?> aClass) {
+        return true;
+    }
+
 
     @Override
     public int getOrder() { //比ConfigFileApplicationListener优先级更高

@@ -9,6 +9,7 @@ import org.springframework.core.Ordered;
  * @Date: 2019/7/30 09:27
  * @Description: After HelloWorld {@link ApplicationListener} 监听 {@link ContextRefreshedEvent}
  */
+
 public class AfterHelloWorldApplicationListener implements ApplicationListener<ContextRefreshedEvent>, Ordered {
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {

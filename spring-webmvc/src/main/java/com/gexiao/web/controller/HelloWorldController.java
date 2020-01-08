@@ -18,6 +18,7 @@ public class HelloWorldController {
 //        model.addAttribute("message", "Hello,World");
 //        model.addAttribute("acceptLanguage", acceptLanguage);
 //        model.addAttribute("jsessionId", jsessionId);
+        model.addAttribute("value", value);
         return "index";
     }
 

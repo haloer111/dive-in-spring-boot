@@ -21,7 +21,7 @@ public class SpringApplicationBootstrap {
         // 配置class名称
         sources.add(ApplicationConfiguration.class.getName());
 
-        SpringApplication application = new SpringApplication();
+        SpringApplication  application = new SpringApplication();
         application.setSources(sources);
 //        application.setWebApplicationType(WebApplicationType.NONE);
         ConfigurableApplicationContext context = application.run(args);

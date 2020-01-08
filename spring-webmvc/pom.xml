@@ -12,6 +12,10 @@
     <artifactId>spring-webmvc</artifactId>
     <packaging>war</packaging>
 
+    <properties>
+<!--        <tomcat.version>7.0.73</tomcat.version>-->
+    </properties>
+
     <dependencies>
 
         <!--servlet 4.0 API的依赖-->
@@ -39,20 +43,20 @@
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.1</version>
-                <executions>
-                    <execution>
-                        <id>tomcat-run</id>
-                        <goals>
-                            <goal>exec-war-only</goal>
-                        </goals>
-                        <phase>package</phase>
-                        <configuration>
-                            <!-- ServletContext path -->
-                            <path>/</path>
-                        </configuration>
-                    </execution>
-                </executions>
+                <version>2.2</version>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>tomcat-run</id>-->
+<!--                        <goals>-->
+<!--                            <goal>exec-war-only</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>package</phase>-->
+<!--                        <configuration>-->
+<!--                            &lt;!&ndash; ServletContext path &ndash;&gt;-->
+<!--                            <path>/</path>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
             </plugin>
         </plugins>
     </build>

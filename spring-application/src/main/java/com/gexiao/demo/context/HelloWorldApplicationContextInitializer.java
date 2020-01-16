@@ -11,9 +11,10 @@ import org.springframework.core.annotation.Order;
  * @Description:
  */
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class HelloWorldApplicationContextInitializer<C extends ConfigurableApplicationContext> implements ApplicationContextInitializer<C> {
+public class HelloWorldApplicationContextInitializer<C extends ConfigurableApplicationContext>
+                implements ApplicationContextInitializer<C> {
     @Override
     public void initialize(C applicationContext) {
-        System.out.println("ConfigurableApplicationContext.id = "+ applicationContext.getId());
+        System.out.println("ConfigurableApplicationContext.id = " + applicationContext.getId());
     }
 }
